@@ -31,6 +31,7 @@
       background: var(--bg);
       color: var(--text);
       height: 100vh;
+      height: 100dvh;
       display: flex;
       flex-direction: column;
       overflow: hidden;
@@ -310,66 +311,72 @@
 
     @media (max-width: 700px) {
       #hdr {
-        padding: 8px 12px 7px;
+        padding: 6px 12px 5px;
         gap: 5px;
         letter-spacing: 2px;
+        font-size: .7em;
       }
 
       #arena {
         flex-direction: column;
-        padding: 6px;
-        gap: 6px;
+        padding: 5px;
+        gap: 5px;
       }
 
+      #ppWrap { flex: 3; }
+      #rpWrap { flex: 2; }
+
       #vsB {
-        width: 36px;
-        height: 36px;
-        font-size: .68em;
-        box-shadow: 0 0 0 2px var(--bg), 0 0 16px rgba(109,40,217,.65), 0 0 16px rgba(0,212,255,.35);
+        width: 32px;
+        height: 32px;
+        font-size: .62em;
+        box-shadow: 0 0 0 2px var(--bg), 0 0 12px rgba(109,40,217,.65), 0 0 12px rgba(0,212,255,.35);
       }
 
       .gtag {
-        font-size: .62em;
-        padding: 4px 14px;
+        font-size: .58em;
+        padding: 3px 12px;
         letter-spacing: 2px;
-        bottom: 8px;
+        bottom: 6px;
       }
 
       .plabel {
-        font-size: .52em;
+        font-size: .5em;
         letter-spacing: 3px;
+        top: 6px;
       }
 
       #btm {
-        padding: 4px 0 8px;
-        gap: 2px;
+        padding: 3px 0 6px;
+        gap: 1px;
       }
 
       #scoreLine {
-        gap: 10px;
+        gap: 8px;
       }
 
       .sc-num {
-        font-size: clamp(1.4em, 6vw, 2.4em);
+        font-size: clamp(1.2em, 5.5vw, 2.4em);
       }
 
       .sc-label {
-        font-size: .48em;
+        font-size: .44em;
       }
 
       #scDiv {
-        font-size: 1.3em;
+        font-size: 1.1em;
       }
 
       #resLine {
-        font-size: clamp(.8em, 4vw, 2.2em);
+        font-size: clamp(.75em, 3.8vw, 2.2em);
         letter-spacing: 1px;
         padding: 0 10px;
+        min-height: 1em;
       }
 
       #playBtn {
-        font-size: .75em;
-        padding: 8px 32px;
+        font-size: .72em;
+        padding: 7px 28px;
         letter-spacing: 2px;
       }
     }
