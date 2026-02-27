@@ -870,8 +870,10 @@ function onHands(res) {
   PC.height = PC.offsetHeight || 1;
   var cw=PC.width, ch=PC.height;
 
-  var sc=Math.max(cw/VW, ch/VH);
-  var dw=VW*sc, dh=VH*sc;
+  var vw = vid.videoWidth  || VW;
+  var vh = vid.videoHeight || VH;
+  var sc=Math.max(cw/vw, ch/vh);
+  var dw=vw*sc, dh=vh*sc;
   var ox=(cw-dw)/2, oy=(ch-dh)/2;
   PCX.drawImage(res.image, ox,oy, dw,dh);
 
