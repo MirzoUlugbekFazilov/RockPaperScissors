@@ -2,17 +2,12 @@ AI Rock–Paper–Scissors 🤖✊📄✂️
 
 Real-time hand gesture recognition game powered by computer vision and browser-based AI.
 
-This project uses webcam input and machine learning-based hand tracking to detect a player's hand gestures and play Rock–Paper–Scissors against an AI robot in real time.
-
-The system runs entirely in the browser, combining computer vision, gesture classification, and an interactive animated UI.
+This project uses webcam input and machine learning-based hand tracking to detect a player's hand gestures and play Rock–Paper–Scissors against an AI robot in real time. The system runs entirely in the browser, combining computer vision, gesture classification, and an interactive animated UI.
 
 Demo
 
-(Add link if hosted)
-
-Example:
-
 Live Demo: https://your-demo-link.com
+
 Features
 
 Real-time hand tracking using MediaPipe Hands
@@ -41,7 +36,7 @@ Canvas API
 
 WebRTC camera streaming
 
-Libraries:
+Libraries
 
 @mediapipe/hands
 
@@ -50,16 +45,14 @@ Libraries:
 @mediapipe/drawing_utils
 
 How It Works
-1. Webcam Input
 
+Webcam Input
 The browser accesses the user's webcam using WebRTC to capture live video frames.
 
-2. Hand Detection
-
+Hand Detection
 MediaPipe Hands detects and tracks 21 hand landmarks in real time.
 
-3. Gesture Recognition
-
+Gesture Recognition
 A custom classification algorithm analyzes landmark distances to determine whether the user shows:
 
 Rock
@@ -67,11 +60,9 @@ Rock
 Paper
 
 Scissors
-
 Temporal smoothing across frames improves stability.
 
-4. Game Logic
-
+Game Logic
 The system compares the player's gesture with the AI's move and determines:
 
 Win
@@ -80,17 +71,16 @@ Lose
 
 Tie
 
-5. Interactive Visualization
-
+Interactive Visualization
 The game renders the interface using HTML5 Canvas, including:
 
-real-time hand overlay
+Real-time hand overlay
 
-animated AI robot
+Animated AI robot
 
-score tracking
+Score tracking
 
-game feedback
+Game feedback
 
 Project Structure
 project
@@ -104,25 +94,18 @@ project
 
 Running the Project
 
-Clone the repository
+Clone the repository:
 
 git clone https://github.com/yourusername/ai-rock-paper-scissors.git
 
-Open the project
+Open the project:
 
 cd ai-rock-paper-scissors
 
-Run locally
-
-Simply open:
-
-index.html
-
-in a browser with webcam permissions enabled.
+Run locally:
+Simply open index.html in a browser with webcam permissions enabled.
 
 Future Improvements
-
-Possible upgrades:
 
 Train a custom gesture classification model
 
@@ -138,20 +121,19 @@ Learning Outcomes
 
 This project demonstrates:
 
-real-time computer vision
+Real-time computer vision
 
-browser-based AI applications
+Browser-based AI applications
 
-gesture recognition systems
+Gesture recognition systems
 
-human-computer interaction
+Human-computer interaction
 
-interactive visualization with Canvas
+Interactive visualization with Canvas
 
 Author
 
 Mirzo-Ulugbek Fazilov
-
 Computer Science & AI student interested in:
 
 Artificial Intelligence
